@@ -6,16 +6,16 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed 
 #four million, find the sum of the even-valued terms.
 
-sum = 2
 nmin2 = 1
 nmin1 = 2
+sum = 2
+newnum = 0
 
-'''This should be a while Loop'''
-for i in range (0,4):
+while (nmin2 + nmin1) < 4000000:
     newnum = nmin2 + nmin1
     nmin2 = nmin1
     nmin1 = newnum
     print(newnum)
     if newnum % 2 == 0:
         sum += newnum
-print(sum)
+print(sum)  
